@@ -9,9 +9,10 @@
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:ts": "npx eslint \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint:ts:fix": "npx eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix"
-
+    "lint:ts": "eslint \"**/*.{js,jsx,ts,tsx}\"",
+    "lint:ts:fix": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix",
+    "lint:scss": "npx stylelint \"**/*.{scss,sass}\"",
+    "lint:scss:fix": "npx stylelint \"**/*.{scss,sass}\" --fix"
   },
   "repository": {
     "type": "git",
