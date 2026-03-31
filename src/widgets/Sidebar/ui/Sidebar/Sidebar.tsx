@@ -2,7 +2,7 @@ import { classNames } from 'shared/lib/helpers/classNames';
 import { useState } from 'react';
 import { Button } from 'shared/ui/Button/Button';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher/ThemeSwitcher';
-import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
+import { LangSwitcher } from 'shared/ui/ThemeSwitcher/LangSwitcher';
 import styles from './Sidebar.module.scss';
 
 interface SidebarProps {
