@@ -8,11 +8,12 @@
     "start": "webpack serve --env port=3000",
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:ts": "eslint \"**/*.{js,jsx,ts,tsx}\"",
-    "lint:ts:fix": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix",
+    "test": "jest",
+    "lint:ts": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:ts:fix": "eslint \"./src/**/*.{js,jsx,ts,tsx}\" --fix",
     "lint:scss": "npx stylelint \"**/*.{scss,sass}\"",
-    "lint:scss:fix": "npx stylelint \"**/*.{scss,sass}\" --fix"
+    "lint:scss:fix": "npx stylelint \"**/*.{scss,sass}\" --fix",
+    "uint": "jest --config ./config/jest/jest.config.js"
   },
   "repository": {
     "type": "git",
@@ -25,11 +26,10 @@
     "url": "https://github.com/utimur/production_project_code_source/issues"
   },
   "homepage": "https://github.com/utimur/production_project_code_source#readme",
-
   "volta": {
     "node": "17.4.0"
   },
-"devDependencies": {
+  "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",

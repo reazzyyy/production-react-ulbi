@@ -14,6 +14,12 @@ export function LangSwitcher({ className }: LangSwitcherProps) {
     };
 
     return (
-        <Button theme={ButtonTheme.CLEAR} className={classNames('', {}, [className])} onClick={toggle}>{t('Язык')}</Button>
+        <Button
+            theme={ButtonTheme.CLEAR}
+            className={classNames('', {}, [className])}
+            onClick={toggle}
+        >
+            {t('Язык')}
+        </Button>
     );
 }
