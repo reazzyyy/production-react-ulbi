@@ -1,8 +1,7 @@
 import { classNames } from 'shared/lib/helpers/classNames';
 import { useState } from 'react';
 import { Button } from 'shared/ui/Button/Button';
-import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher/ThemeSwitcher';
-import { LangSwitcher } from 'shared/ui/ThemeSwitcher/LangSwitcher';
+import { ThemeSwitcher, LangSwitcher } from 'shared/ui';
 import styles from './Sidebar.module.scss';
 
 interface SidebarProps {
@@ -18,6 +17,7 @@ export function Sidebar({ className }: SidebarProps) {
 
     return (
         <div className={classNames(styles.sidebar, { [styles.collapsed]: collapsed }, [className])}>
+            {/* eslint-disable-next-line i18next/no-literal-string */}
             <Button onClick={onToggle}>
                 toggle
             </Button>
