@@ -1,0 +1,9 @@
+.bugbutton {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 100;
+    background-color: var(--inverted-bg-color);
+    padding: 8px 12px;
+    border-radius: 4px;
+}

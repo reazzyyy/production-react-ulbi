@@ -4,5 +4,8 @@
   "О сайте": "About site",
   "Язык": "English",
   "Загрузка...": "Loading...",
-  "Страница не найдена": "Page not found"
+  "Страница не найдена": "Page not found",
+  "Вызвать ошибку": "Throw error",
+  "Обновить страницу": "Refresh page",
+  "Что то пошло не так": "Something went wrong"
 }
