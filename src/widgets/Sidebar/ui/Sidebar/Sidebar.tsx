@@ -16,9 +16,12 @@ export function Sidebar({ className }: SidebarProps) {
     };
 
     return (
-        <div className={classNames(styles.sidebar, { [styles.collapsed]: collapsed }, [className])}>
+        <div
+            data-testid="sidebar"
+            className={classNames(styles.sidebar, { [styles.collapsed]: collapsed }, [className])}
+        >
             {/* eslint-disable-next-line i18next/no-literal-string */}
-            <Button onClick={onToggle}>
+            <Button data-testid="sidebar-toggle" onClick={onToggle}>
                 toggle
             </Button>
             <div className={styles.switchers}>

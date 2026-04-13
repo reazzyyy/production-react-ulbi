@@ -1,3 +1,4 @@
+const path = require('path');
 /*
  * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
@@ -11,6 +12,7 @@ module.exports = {
     // An array of directory names to be searched recursively up from the requiring module's location
     moduleDirectories: ['node_modules'],
 
+    modulePaths: ['<rootDir>/src'],
     // An array of file extensions your modules use
     moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node'],
     // The root directory that Jest should scan for tests and modules within
@@ -19,6 +21,13 @@ module.exports = {
     testEnvironment: 'jsdom',
     // The glob patterns Jest uses to detect test files
     testMatch: ['<rootDir>/src/**/*(*.)@(test|spec).[tj]s?(x)'],
+
+    setupFilesAfterEnv: ['<rootDir>/config/jest/setupTests.ts'],
+
+    moduleNameMapper: {
+        '\\.s?css$': 'identity-obj-proxy',
+        '\\.svg$': path.resolve(__dirname, 'jestEmptyComponent'),
+    },
     // All imported modules in your tests should be mocked automatically
     // automock: false,
 
