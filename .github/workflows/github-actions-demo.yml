@@ -29,5 +29,7 @@ jobs:
               run: npm run test:unit
             - name: build storybook
               run: npm run storybook:build
+            - name: Pull Chrome Docker image
+              run: docker pull yukinying/chrome-headless-browser:90.0.4408.0
             - name: screenshot tests
               run: npm run test:ui:ci
