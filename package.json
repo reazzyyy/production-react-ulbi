@@ -112,6 +112,9 @@
   "loki": {
     "chromeDockerWithoutSeccomp": true,
     "chromeFlags": "--headless --disable-gpu --hide-scrollbars --no-sandbox",
+    "chromeConcurrency": 1,
+    "chromeLoadTimeout": 60000,
+    "chromeDockerImage": "yukinying/chrome-headless-browser-stable:118.0.5993.117",
     "configurations": {
       "chrome.laptop": {
         "target": "chrome.docker",
